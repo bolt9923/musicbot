@@ -15,7 +15,7 @@ async def start(client: Client, message: Message):
             [
                [
             InlineKeyboardButton(
-                text="☆ 🎭 𝓐𝓴𝓪𝓼𝓱 ♛'s 💗 ", url=f"https://t.me/thikhaisamjhgya"
+                text="☆ 𓆩𝗠𝗥𓆪 🇸 𝗛 𝗜 𝗡 𝗖 𝗛 𝗔 𝗡❤️‍🔥 💗 ", url=f"https://t.me/thikhaisamjhgya"
             ),
             InlineKeyboardButton(
                 text="☆ ꜱᴜᴘᴘᴏʀᴛ 💗", url=f"https://t.me/allinoneearning101"
