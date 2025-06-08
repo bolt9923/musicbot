@@ -358,13 +358,13 @@ async def chat_watcher_func(_, message):
                             else:
                                 send = await message.reply_photo(
                                     photo=f"downloads/{user_id}.jpg",
-                                    caption=f"**{first_name[:25]}** ɪs ᴀғᴋ sɪɴᴄᴇ {seenago}\n\nʀᴇᴀsᴏɴ: `{so rahe}`\n\n",
+                                    caption=f"**{first_name[:25]}** ɪs ᴀғᴋ sɪɴᴄᴇ {seenago}\n\nʀᴇᴀsᴏɴ: `{reasonafk}`\n\n",
                                 )
                     except:
                         msg += f"**{first_name[:25]}** ɪs ᴀғᴋ\n\n"
             j += 1
     if msg != "":
         try:
-            send = await message.reply_text(msg, disable_web_page_preview=FALSE)
+            send = await message.reply_text(msg, disable_web_page_preview=True)
         except:
             return
