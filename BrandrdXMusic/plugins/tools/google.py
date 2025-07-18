@@ -7,7 +7,7 @@ from BrandrdXMusic import app
 from SafoneAPI import SafoneAPI
 
 
-@app.on_message(filters.command(["google", "gle"]))
+@app.on_message(filters.command(["CROMABING", "CMTP"]))
 async def google(bot, message):
     if len(message.command) < 2 and not message.reply_to_message:
         await message.reply_text("Example:\n\n`/google lord ram`")
@@ -17,7 +17,7 @@ async def google(bot, message):
         user_input = message.reply_to_message.text
     else:
         user_input = " ".join(message.command[1:])
-    b = await message.reply_text("**Sᴇᴀʀᴄʜɪɴɢ ᴏɴ Gᴏᴏɢʟᴇ....**")
+    b = await message.reply_text("**CHUP RUAK JA DIKHATA....**")
     try:
         a = search(user_input, advanced=True)
         txt = f"Search Query: {user_input}\n\nresults"
