@@ -15,7 +15,7 @@ POLICE = [
     [
         InlineKeyboardButton(
             text="ᴍʏ ᴄᴜᴛᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ  🥀",
-            url=f"https://t.me/thikhaisamjhgya",
+            url=f"https://t.me/SEXYSHINU",
         ),
     ],
 ]
@@ -49,7 +49,7 @@ async def ctest(_, message):
     try:
      #  is_selected = await get_couple(cid, today)
      #  if not is_selected:
-         msg = await message.reply_text("ɢᴇɴᴇʀᴀᴛɪɴɢ ᴄᴏᴜᴘʟᴇs ɪᴍᴀɢᴇ...")
+         msg = await message.reply_text("JODI BANA RAHE RUAK JAO BABY...")
          #GET LIST OF USERS
          list_of_users = []
 
@@ -72,7 +72,7 @@ async def ctest(_, message):
          try:
             p1 = await app.download_media(photo1.big_file_id, file_name="pfp.png")
          except Exception:
-            p1 = "BrandrdXMusic/assets/upic.png"
+            p1 = "BrandrdXMusic/assets/Upic.png"
          try:
             p2 = await app.download_media(photo2.big_file_id, file_name="pfp1.png")
          except Exception:
@@ -100,8 +100,8 @@ async def ctest(_, message):
 
          draw = ImageDraw.Draw(img)
 
-         img.paste(img1, (116, 160), img1)
-         img.paste(img2, (789, 160), img2)
+         img.paste(img1, (11, 16), img1)
+         img.paste(img2, (78, 16), img2)
 
          img.save(f'test_{cid}.png')
     
@@ -113,18 +113,18 @@ async def ctest(_, message):
 ɴᴇxᴛ ᴄᴏᴜᴘʟᴇs ᴡɪʟʟ ʙᴇ sᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
 """
     
-         await message.reply_photo(f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
+         await message.REPLY (f"test_{cid}.png", caption=TXT, reply_markup=InlineKeyboardMarkup(POLICE),
     )
          await msg.delete()
          a = upload_file(f"test_{cid}.png")
          for x in a:
-           img = "https://graph.org/" + x
+           img = "https://files.catbox.moe/ms7xee.jpg" + x
            couple = {"c1_id": c1_id, "c2_id": c2_id}
           # await save_couple(cid, today, couple, img)
     
          
       # elif is_selected:
-      #   msg = await message.reply_text("𝐆ᴇᴛᴛɪɴɢ 𝐓ᴏᴅᴀʏs 𝐂ᴏᴜᴘʟᴇs 𝐈ᴍᴀɢᴇ...")
+      #   msg = await message.reply_text("JODI BANA RAHE RUAK JAO BABY...")
       #   b = await _get_image(cid)
        #  c1_id = int(is_selected["c1_id"])
        #  c2_id = int(is_selected["c2_id"])
@@ -138,13 +138,13 @@ async def ctest(_, message):
 #➖➖➖➖➖➖➖➖➖➖➖➖
 #ɴᴇxᴛ ᴄᴏᴜᴘʟᴇꜱ ᴡɪʟʟ ʙᴇ ꜱᴇʟᴇᴄᴛᴇᴅ ᴏɴ {tomorrow} !!**
 #"""
- #        await message.reply_photo(b, caption=TXT)
+ #        await message.(b, caption=TXT)
         # await msg.delete()
     except Exception as e:
         print(str(e))
     try:
-      os.remove(f"./downloads/pfp1.png")
-      os.remove(f"./downloads/pfp2.png")
+      os.remove(f"./downloads/pfp.png")
+      os.remove(f"./downloads/pfp.png")
       os.remove(f"test_{cid}.png")
     except Exception:
        pass
