@@ -12,14 +12,14 @@ SPAM_CHATS = {}
 
 
 @app.on_message(
-    filters.command(["utag", "uall"], prefixes=["/", "@", ".", "#"]) & admin_filter
+    filters.command(["lol", "lll"], prefixes=["/", "@", ".", "#"]) & admin_filter
 )
 async def tag_all_users(_, message):
     global SPAM_CHATS
     chat_id = message.chat.id
     if len(message.text.split()) == 1:
         await message.reply_text(
-            "** ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴛᴀɢ ᴀʟʟ, ʟɪᴋᴇ »** `@utag Hi Friends`"
+            "** ɢɪᴠᴇ sᴏᴍᴇ ᴛᴇxᴛ ᴛᴏ ᴛᴀɢ ᴀʟʟ, ʟɪᴋᴇ »** `@lol Hi Friends`"
         )
         return
 
@@ -46,7 +46,7 @@ async def tag_all_users(_, message):
                 if usernum == 5:
                     await app.send_message(
                         message.chat.id,
-                        f"{text}\n{usertxt}\n\n|| ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /stoputag ||",
+                        f"{text}\n{usertxt}\n\n|| ➥ ᴏғғ ᴛᴀɢɢɪɴɢ ʙʏ » /off ||",
                     )
                     usernum = 0
                     usertxt = ""
@@ -57,7 +57,7 @@ async def tag_all_users(_, message):
 
 @app.on_message(
     filters.command(
-        ["stoputag", "stopuall", "offutag", "offuall", "utagoff", "ualloff"],
+        ["stoputag", "stopuall", "offutag", "offuall", "utagoff", "cancel"],
         prefixes=["/", ".", "@", "#"],
     )
     & admin_filter
@@ -69,4 +69,4 @@ async def stop_tagging(_, message):
         SPAM_CHATS[chat_id] = False
         return await message.reply_text("**RUAK GAYA SAB KO TAG KARE KE...**")
     else:
-        await message.reply_text("**ᴜᴛᴀɢ ᴘʀᴏᴄᴇss ɪs ɴᴏᴛ ᴀᴄᴛɪᴠᴇ**")
+        await message.reply_text("**AVE COMMAND DALO SAHI SE**")
