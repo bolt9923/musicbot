@@ -15,15 +15,15 @@ async def start(client: Client, message: Message):
             [
                [
             InlineKeyboardButton(
-                text="☆ 🎭 𝓐𝓴𝓪𝓼𝓱 ♛'s 💗 ", url=f"https://t.me/thikhaisamjhgya"
+                text="𓆩𝗠𝗥𓆪 🇸 𝗛 𝗜 𝗡 𝗖 𝗛 𝗔 𝗡❤️‍🔥 💗 ", url=f"https://t.me/sexyshinu"
             ),
             InlineKeyboardButton(
-                text="☆ ꜱᴜᴘᴘᴏʀᴛ 💗", url=f"https://t.me/allinoneearning101"
+                text="☆ ꜱᴜᴘᴘᴏʀᴛ 💗", url=f"https://t.me/+7h61ibzWCWY5NTc1"
             ),
         ],
                 [
             InlineKeyboardButton(
-                text="☆ ᴄʜᴀɴɴᴇʟ💗", url=f"https://t.me/allinoneearning101"
+                text="☆ ᴄʜᴀɴɴᴇʟ💗", url=f"https://t.me/TG_X_UPDATE"
             ),
                 ],
                 [
